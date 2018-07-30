@@ -18,6 +18,7 @@
   "homepage": "https://github.com/erinkelley27/project2-bunbleapp#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "hbs": "^4.0.1"
+    "hbs": "^4.0.1",
+    "mongoose": "^5.2.5"
   }
 }
