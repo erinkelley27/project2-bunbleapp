@@ -1,5 +1,5 @@
 const User = require('../models/User')
-const { Burger } = require('..models/Burger')
+const { Burger } = require('../models/Burger')
 const bcrypt = require('bcrypt-nodejs')
 
 const createPassword = password =>
@@ -24,6 +24,38 @@ User.find({}).remove(() => {
             topping1: 'Maple & Black Pepper Candied Bacon',
             topping2: 'Runny Egg',
             topping3: 'Sharp Cheddar Cheese',
+            topping4: ' ',
+            topping5: ' '
+          }
+        }).then(burger => {
+          user.burgers.push(burger)
+        }),
+        Burger.create({
+          image: './public/images/default-burger',
+          name: 'Hawaiian Burger',
+          description: 'desc placeholder',
+          toppings: {
+            bun: 'Kings Hawaiian Sweet Hamburger Bun',
+            meat: 'Ground Beef Patty',
+            topping1: 'Caramelized Pineapple Ring',
+            topping2: 'Thick Cut Bacon',
+            topping3: 'Pepper Jack Cheese',
+            topping4: ' ',
+            topping5: ' '
+          }
+        }).then(burger => {
+          user.burgers.push(burger)
+        }),
+        Burger.create({
+          image: './public/images/default-burger',
+          name: 'Philadelphia Phillies Burger',
+          description: 'desc placeholder',
+          toppings: {
+            bun: 'Philly Soft Pretzel Bun',
+            meat: 'Ground Beef Patty',
+            topping1: 'Grilled Peppers and Onions',
+            topping2: 'Cheese Whiz',
+            topping3: ' ',
             topping4: ' ',
             topping5: ' '
           }
