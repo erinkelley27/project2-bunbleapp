@@ -7,6 +7,11 @@ const createPassword = password =>
 
 User.find({}).remove(() => {
   Burger.find({}).remove(() => {
-
+    let erin = User.create({
+      local: {
+        email: 'erinkelley27@gmail.com',
+        password: createPassword('password1')
+      }
+    })
   })
 })
