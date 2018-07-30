@@ -1,0 +1,23 @@
+{
+  "name": "project2-bunbleapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erinkelley27/project2-bunbleapp.git"
+  },
+  "author": "erin kelley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erinkelley27/project2-bunbleapp/issues"
+  },
+  "homepage": "https://github.com/erinkelley27/project2-bunbleapp#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.1"
+  }
+}
