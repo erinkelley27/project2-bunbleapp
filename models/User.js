@@ -7,7 +7,7 @@ const User = new Schema({
     password: String,
     image: String
   },
-  favorites: [
+  burgers: [
     {
       type: Schema.Types.ObjectId,
       ref: 'Burger'
