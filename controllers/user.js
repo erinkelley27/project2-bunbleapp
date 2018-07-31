@@ -1,9 +1,10 @@
-const { User } = require('../models/User')
+const User = require('../models/User')
 // const { Burger } = require('../models/Burger')
+// const passport = require('passport')
 
 module.exports = {
   show: (req, res) => {
-    User.fineOne({ _id: req.params.id })
+    User.findOne({ _id: req.params.id })
       .then(user => {
         res.render('user/show', { user })
       })
