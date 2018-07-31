@@ -1,3 +1,7 @@
 body {
     background: yellow;
 }
+
+.burger-name {
+    border: solid black 10px;
+}
