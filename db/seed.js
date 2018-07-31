@@ -15,7 +15,7 @@ User.find({}).remove(() => {
     }).then(user => {
       Promise.all([
         Burger.create({
-          image: '../images/default-burger.png',
+          image: '../images/breakfast-burger.jpg',
           name: 'Breakfast Burger',
           description: 'When breakfast is on a burger, you can eat burgers any time!',
           toppings: {
