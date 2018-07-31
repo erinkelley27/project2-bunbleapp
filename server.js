@@ -6,7 +6,9 @@ const app = express()
 hbs.registerPartials(__dirname + '/views/partials')
 app.use(express.static('public'))
 app.set('view engine', 'hbs')
+app.use(express.static('public'))
 
-app.use(require('./routes/index.js'))
+app.use(require('./routes/app.js'))
+app.use(require('./routes/burger.js'))
 
 app.listen(3000, () => console.log('running on port 3000'))

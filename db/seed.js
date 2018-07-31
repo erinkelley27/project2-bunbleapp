@@ -15,7 +15,7 @@ User.find({}).remove(() => {
     }).then(user => {
       Promise.all([
         Burger.create({
-          image: '../public/images/default-burger',
+          image: '../images/default-burger.png',
           name: 'Breakfast Burger',
           description: 'When breakfast is on a burger, you can eat burgers any time!',
           toppings: {
@@ -31,7 +31,7 @@ User.find({}).remove(() => {
           user.burgers.push(burger)
         }),
         Burger.create({
-          image: '../public/images/default-burger',
+          image: '../images/default-burger.png',
           name: 'Hawaiian Burger',
           description: 'desc placeholder',
           toppings: {
@@ -47,7 +47,7 @@ User.find({}).remove(() => {
           user.burgers.push(burger)
         }),
         Burger.create({
-          image: '../public/images/default-burger',
+          image: '../images/default-burger.png',
           name: 'Philadelphia Phillies Burger',
           description: 'desc placeholder',
           toppings: {
