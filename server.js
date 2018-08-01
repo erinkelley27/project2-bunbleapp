@@ -12,8 +12,8 @@ const methodOverride = require('method-override')
 const app = express()
 
 require('./config/passport')(passport)
-app.use(passport.initialize())
-app.use(passport.session())
+
+
 
 app.use(morgan('dev'))
 app.use(cookieParser())
@@ -27,8 +27,14 @@ app.use(express.static('public'))
 app.use(session({secret: 'EXPRESS-SECRETS'}))
 app.use(flash())
 
+app.use(passport.initialize())
+app.use(passport.session())
+
 app.use(require('./routes/app.js'))
 app.use(require('./routes/burger.js'))
 app.use(require('./routes/user.js'))
 
 app.listen(3000, () => console.log('running on port 3000'))
+
+app.use(require("better-express-errors")(app))
+

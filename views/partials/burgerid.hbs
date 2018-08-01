@@ -19,4 +19,13 @@
         <div class="topping4">{{ toppings.topping4 }}</div>
         <div class="topping5">{{ toppings.topping5 }}</div>
     </div>
+    <div class="comments">
+        <div class="comments-list">
+            <div class="individual-comment">
+            {{ content }}
+            <a href="/user/{{ author.id }}" class="comment-author">{{ author.local.email }}</a>
+            <span class="tweet__date">{{ createdAt }}</span>
+            </div>
+        </div>
+    </div>
 </div>

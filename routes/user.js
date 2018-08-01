@@ -3,7 +3,7 @@ const router = express.Router()
 const userController = require('../controllers/user.js')
 
 router.get('/user/:id', userController.show)
-router.get('/signup', userController.signUp)
+// router.get('/signup', userController.signUp)
 router.post('/signup', userController.createSignUp)
 
 // router.get('/login', userController.login)
