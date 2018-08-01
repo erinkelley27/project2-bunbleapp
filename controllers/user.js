@@ -9,5 +9,15 @@ module.exports = {
   },
   new: (req, res) => {
     res.render('user/new')
+  },
+  create: (req, res) => {
+    User.create({
+      local: {
+        email: req.body.email,
+        password: req.body.password
+      }
+    }).then(user => {
+      res.redirect(`/user/${user.id}`)
+    })
   }
 }
