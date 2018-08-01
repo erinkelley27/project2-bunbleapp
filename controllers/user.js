@@ -8,5 +8,13 @@ module.exports = {
       .then(user => {
         res.render('user/show', { user })
       })
+  },
+  createSignUp: (req, res) => {
+    const signup = passport.authenticate('local-signup', {
+      successRedirect: '/',
+      failureRedirect: '/signup',
+      failureFlash: true
+    })
+    return signup(req, res)
   }
 }

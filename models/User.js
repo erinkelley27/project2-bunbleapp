@@ -15,6 +15,7 @@ const User = new Schema({
   ]
 })
 
+// What is a salt?
 User.methods.encrypt = function(password) {
   return bcrypt.hashSync(password, brcypt.genSaltSync(8), null)
 }
