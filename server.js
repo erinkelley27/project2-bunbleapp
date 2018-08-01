@@ -37,4 +37,3 @@ app.use(require('./routes/user.js'))
 app.listen(3000, () => console.log('running on port 3000'))
 
 app.use(require("better-express-errors")(app))
-
