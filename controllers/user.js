@@ -6,5 +6,8 @@ module.exports = {
       .then(user => {
         res.render('user/show', { user })
       })
+  },
+  new: (req, res) => {
+    res.render('user/new')
   }
 }
