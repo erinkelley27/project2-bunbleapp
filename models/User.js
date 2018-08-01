@@ -15,4 +15,8 @@ const User = new Schema({
   ]
 })
 
+User.methods.encrypt = function(password) {
+  return bcrypt.hashSync(password, brcypt.genSaltSync(8), null)
+}
+
 module.exports = mongoose.model('User', User)
