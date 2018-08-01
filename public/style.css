@@ -1,5 +1,26 @@
 body {
-    background: yellow;
+    background-image: url('../images/french-fries.jpg');
+    background-repeat: repeat;
+    font-family: 'Nunito', sans-serif;
+}
+
+.site-header {
+    background: firebrick;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.bunble-logo-center {
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-size: 48px;
+    text-decoration: none;
+}
+
+main {
+    border: solid black 5px;
+    margin: 25px 5% 25px 5%;
 }
 
 .image {
