@@ -9,6 +9,10 @@ const session = require('express-session')
 // Does it matter what order these are in?
 const app = express()
 
+require('./config/passport')(passport)
+app.use(passport.initialize())
+app.use(passport.session())
+
 app.use(morgan('dev'))
 app.use(cookieParser())
 app.use(bodyParser())
