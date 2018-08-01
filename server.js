@@ -1,6 +1,7 @@
 const express = require('express')
 const hbs = require('hbs')
 const bodyParser = require('body-parser')
+const methodOverride = require('method-override')
 
 // Does it matter what order these are in?
 const app = express()
@@ -9,6 +10,7 @@ app.use(express.static('public'))
 app.set('view engine', 'hbs')
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(methodOverride('_method'))
 
 // app.use(require('./routes/index.js'))
 app.use(require('./routes/app.js'))
