@@ -1,6 +1,4 @@
 const User = require('../models/User')
-// const { Burger } = require('../models/Burger')
-// const passport = require('passport')
 
 module.exports = {
   show: (req, res) => {
