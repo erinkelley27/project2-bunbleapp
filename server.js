@@ -1,10 +1,12 @@
 const express = require('express')
 const hbs = require('hbs')
+const passport = require('passport')
 const morgan = require('morgan')
 const flash = require('connect-flash')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 const session = require('express-session')
+const methodOverride = require('method-override')
 
 // Does it matter what order these are in?
 const app = express()
@@ -16,12 +18,13 @@ app.use(passport.session())
 app.use(morgan('dev'))
 app.use(cookieParser())
 app.use(bodyParser())
+app.use(methodOverride('_methiod'))
 
 app.set('view engine', 'hbs')
 hbs.registerPartials(__dirname + '/views/partials')
 app.use(express.static('public'))
 
-app.use(session({secret: 'WDI-GENERAL-ASSEMBLY-EXPRESS'}))
+app.use(session({secret: 'EXPRESS-SECRETS'}))
 app.use(flash())
 
 app.use(require('./routes/app.js'))
