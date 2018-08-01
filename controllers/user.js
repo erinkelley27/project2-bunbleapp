@@ -1,4 +1,6 @@
 const User = require('../models/User')
+const bodyParser = require('body-parser')
+const methodOverride = require('method-override')
 
 module.exports = {
   show: (req, res) => {
