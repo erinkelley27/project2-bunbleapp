@@ -1,3 +1,4 @@
+/* LAYOUT  */
 body {
     background-image: url('../images/french-fries.jpg');
     background-repeat: repeat;
@@ -5,28 +6,148 @@ body {
 }
 
 .site-header {
-    background: firebrick;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    background: tomato;
+    box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
+    margin: 0;
+    padding: 25px 0px 25px 0px;
     text-align: center;
+    box-shadow: 10px grey;
 }
 
 .bunble-logo-center {
     font-family: 'Fredoka One', cursive;
     color: white;
-    font-size: 48px;
+    font-size: 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    text-align: right;
+    list-style-type: none;
+    margin: 0px 2% 0px 0px;
+    color: white;
     text-decoration: none;
 }
 
 main {
     border: solid black 5px;
-    margin: 25px 5% 25px 5%;
+    margin: 25px 2% 25px 2%;
+}
+
+/* HOMEPAGE */
+.burgers {
+    border: solid blue 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slide-partial {
+    background: white;
+    box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
+    margin: 10px 10px 10px 10px;
+    border: solid pink 5px;
+    /* height: 400px;
+    width: 300px; */
+}
+
+.burger-image {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; */
 }
 
 .image {
-    height: 250px;
+    height: 350px;
+    /* flex-shrink: 1;
+    min-width: 100%;
+    min-height: 100% */
+}
+
+.burger-link {
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* BURGER ID PAGE */
+.id-partial {
+    text-align: center;
+    margin: 25px 20% 25px 20%;
+    background: white;
+    box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
+    border: solid yellow 5px;
 }
 
 .burger-name {
-    border: solid black 10px;
+    background: tomato;
+    padding: 5px 10px 5px 10px;
+}
+
+.burger-desc {
+    background: gold;
+    padding: 3px 10px 3px 10px;
+}
+
+.bun {
+    background: lightgrey;
+    padding: 0px 10px 0px 10px;
+}
+
+.meat {
+    background: silver;
+    padding: 0px 10px 0px 10px;
+}
+
+.topping1 {
+    background: lightgrey;
+    padding: 0px 10px 0px 10px;
+}
+
+.topping2 {
+    background: silver;
+    padding: 0px 10px 0px 10px;
+}
+
+.topping3 {
+    background: lightgrey;
+    padding: 0px 10px 0px 10px;
+}
+
+.topping4 {
+    background: silver;
+    padding: 0px 10px 0px 10px;
+}
+
+.topping5 {
+    background: lightgrey;
+    padding: 0px 10px 0px 10px;
+}
+
+.card {
+    border: solid green 5px;
+}
+
+/* New User page */
+.new-user {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px 35% 25px 35%;
+    background: white;
+    box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
+    border: solid yellow 5px;
+}
+
+h4 {
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    color: tomato;
+    font-size: 24px;
 }
