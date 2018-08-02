@@ -2,9 +2,9 @@
   {{> 'burgerid' burger }}
 <div>
 
-{{#if comments.length}}
+{{!-- {{#if comments.length}}
   {{#each comments}}
-    <div class="card">
+    <div class="comments-list">
       <div class="card-content">
         <span class="card-title">
           {{ content }}
@@ -18,12 +18,12 @@
   {{/each}}
 {{/if}}
 
-<div class="card">
+<div class="comment-form">
   <div class="card-content">
-    <h4 class="card-title">Add a comment:</h6>
+    <h4 class="card-title">Add a comment:</h4>
     <form method="POST" action="/burger/{{id}}?_method=PUT" class="row">
         <input type="text" name="content" id="">
         <input class="btn" type="submit" value="Submit">
     </form>
   </div>
-</div>
+</div> --}}

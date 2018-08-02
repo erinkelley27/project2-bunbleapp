@@ -20,3 +20,29 @@
         <div class="topping5">{{ toppings.topping5 }}</div>
     </div>
 </div>
+
+{{#if comments.length}}
+  {{#each comments}}
+    <div class="comments-list">
+      <div class="card-content">
+        <span class="card-title">
+          {{ content }}
+        </span>
+      </div>
+      <div class="card-action">
+        <a href="/user/{{ author.id }}" class="">{{ author.local.email }}</a>
+        <span class="burger__date">{{ createdAt }}</span>
+      </div>
+    </div>
+  {{/each}}
+{{/if}}
+
+<div class="comment-form">
+  <div class="card-content">
+    <h6 class="card-title">Add a comment:</h6>
+    <form method="POST" action="/burger/{{id}}?_method=PUT" class="row">
+        <input type="text" name="content" id="">
+        <input class="btn" type="submit" value="Submit">
+    </form>
+  </div>
+</div>

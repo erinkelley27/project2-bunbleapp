@@ -9,9 +9,10 @@ body {
     background: tomato;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
     margin: 0;
-    padding: 20px 0px 20px 0px;
+    padding: 30px 0px 15px 0px;
     text-align: center;
     box-shadow: 10px grey;
+    color: white;
 }
 
 .bunble-logo-center {
@@ -30,6 +31,11 @@ body {
     text-decoration: none;
 }
 
+.nav-link {
+    color: white;
+    text-decoration: none;  
+}
+
 main {
     border: solid black 5px;
     margin: 25px 1% 25px 1%;
@@ -40,9 +46,9 @@ main {
     border: solid blue 5px;
     text-align: center;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    /* flex-direction: row; */
 }
 
 .slide-partial {
@@ -50,6 +56,8 @@ main {
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
     margin: 10px 10px 10px 10px;
     border: solid pink 5px;
+    flex-direction: row;
+    /* display: flex; */
     /* height: 400px;
     width: 300px; */
 }
@@ -82,7 +90,7 @@ main {
     margin: 25px 20% 25px 20%;
     background: white;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
-    border: solid yellow 5px;
+    border: solid gold 5px;
 }
 
 .burger-name {
@@ -130,8 +138,21 @@ main {
     padding: 0px 10px 0px 10px;
 }
 
-.card {
+/* Comments */
+.comments-list {
+    margin: 25px 20% 25px 20%;
+    padding: 10px 10px 10px 10px;
+    background: white;
+    box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);    
     border: solid green 5px;
+}
+
+.comment-form {
+    margin: 25px 20% 25px 20%;
+    padding: 10px 10px 10px 10px;
+    background: white;
+    box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);    
+    border: solid pink 5px;
 }
 
 /* New User page */
@@ -142,7 +163,7 @@ main {
     margin: 25px 35% 25px 35%;
     background: white;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
-    border: solid yellow 5px;
+    border: solid gold 5px;
     padding: 10px 10px 10px 10px;
 }
 
