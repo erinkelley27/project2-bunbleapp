@@ -9,7 +9,7 @@ body {
     background: tomato;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
     margin: 0;
-    padding: 30px 0px 15px 0px;
+    padding: 35px 0px 10px 0px;
     text-align: center;
     box-shadow: 10px grey;
     color: white;
@@ -24,6 +24,7 @@ body {
 }
 
 .nav-links {
+    /* display: inline; */
     text-align: right;
     list-style-type: none;
     margin: 0px 2% 0px 0px;
@@ -32,6 +33,7 @@ body {
 }
 
 .nav-link {
+    /* display: inline; */
     color: white;
     text-decoration: none;  
 }
@@ -95,7 +97,7 @@ h4 {
 /* BURGER ID PAGE */
 .id-partial {
     text-align: center;
-    margin: 25px 20% 25px 20%;
+    margin: 25px 25% 25px 25%;
     background: white;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
     /* border: solid gold 5px; */
@@ -148,11 +150,10 @@ h4 {
 
 /* Comments */
 .comments-list {
-    margin: 25px 20% 25px 20%;
+    margin: 25px 25% 25px 25%;
     padding: 10px 10px 10px 10px;
     background: white;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);    
-    /* border: solid green 5px; */
 }
 
 .comment-date {
@@ -175,10 +176,16 @@ h4 {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin: 25px 20% 25px 20%;
+    margin: 25px 25% 25px 25%;
     background: white;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
     padding: 2px 10px 10px 10px;
+}
+
+.comment-input {
+    height: 75px;
+    width: 500px;
+    font-size: 14px;
 }
 
 .comment-submit-button {
@@ -216,7 +223,6 @@ h4 {
     color: white;
     border: none;
     padding: 5px 10px 5px 10px;
-    /* margin: 5px 38% 5px 38%; */
 }
 
 /* User Profile */

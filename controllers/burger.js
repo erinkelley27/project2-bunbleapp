@@ -8,10 +8,10 @@ module.exports = {
       })
   },
   update: (req, res) => {
-    let { content, author } = req.body
+    let { content } = req.body
     Burger.findOne({ _id: req.params.id })
       .then(burger => {
-        burger.comments.push({ content, author })
+        burger.comments.push({ content })
         burger.save(err => {
           res.redirect(`/burger/${burger._id}`)
         })

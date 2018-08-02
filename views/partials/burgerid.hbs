@@ -1,4 +1,6 @@
 {{!-- Burger show page - Includes burger information and comments --}}
+
+{{!-- Burger photo, name, description and toppings --}}
 <div class="id-partial">
     <div class="burger-image">
         <img src="{{ image }}" alt="{{ name }}" class="image">
@@ -22,6 +24,7 @@
     </div>
 </div>
 
+{{!-- Populates comments after they are submitted by the user with delete button --}}
 {{#if comments.length}}
   {{#each comments}}
     <div class="comments-list">
@@ -40,12 +43,13 @@
   {{/each}}
 {{/if}}
 
+{{!-- Form to add a comment --}}
 <div class="comment-form">
   <div class="comment-form-slide">
     <h4 class="comment-prompt">Yuck or Yum?</h4>
     <form class="comment-form-form"  action="/burger/{{id}}?_method=PUT" method="POST">
-        <input type="text" name="content" class="comment-input">
-        <input type="submit" value="Submit" class="comment-submit-button">
+        <p><input type="text" name="content" class="comment-input" placeholder="Leave your comment here!"></p>
+        <p><input type="submit" value="Submit" class="comment-submit-button"></p>
     </form>
   </div>
 </div>
