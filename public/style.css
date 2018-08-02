@@ -43,7 +43,7 @@ main {
 
 /* HOMEPAGE */
 .burgers {
-    border: solid blue 5px;
+    /* border: solid blue 5px; */
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +55,7 @@ main {
     background: white;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
     margin: 10px 10px 10px 10px;
-    border: solid pink 5px;
+    /* border: solid pink 5px; */
     flex-direction: row;
     /* display: flex; */
     /* height: 400px;
@@ -63,6 +63,7 @@ main {
 }
 
 .burger-image {
+    border: solid white 5px;
     /* display: flex;
     justify-content: center;
     align-items: center;
