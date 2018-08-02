@@ -178,7 +178,7 @@ main {
 .comment-submit-button {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
-    background: #44C355;
+    background: gold;
     color: white;
     border: none;
     padding: 5px 10px 5px 10px;
@@ -189,11 +189,16 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 25px 35% 25px 35%;
+    text-align: center;
+    margin: 25px 25% 25px 25%;
     background: white;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
-    /* border: solid gold 5px; */
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 25px 10px;
+}
+
+.new-user-form {
+    display: flex;
+    justify-content: center;
 }
 
 h4 {
@@ -216,7 +221,6 @@ h4 {
     margin: 25px 25% 25px 25%;
     background: white;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
-    /* border: solid gold 5px; */
     padding: 10px 10px 25px 10px;
 }
 
@@ -232,5 +236,4 @@ h4 {
     color: white;
     border: none;
     padding: 5px 10px 5px 10px;
-    /* box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75); */
 }
