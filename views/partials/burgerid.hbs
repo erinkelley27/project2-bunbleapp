@@ -24,25 +24,28 @@
 {{#if comments.length}}
   {{#each comments}}
     <div class="comments-list">
-      <div class="card-content">
-        <span class="card-title">
+      <div class="comments-slide">
+        <span class="comment">
           {{ content }}
         </span>
       </div>
-      <div class="card-action">
-        <a href="/user/{{ author.id }}" class="">{{ author.local.email }}</a>
-        <span class="burger__date">{{ createdAt }}</span>
+      <div class="comments-info-and-actions">
+        {{!-- <a href="/user/{{ author.id }}" class="">{{ author.local.email }}</a> --}}
+        <span class="comment-date">{{ createdAt }}</span>
+        <form class="delete-comment-form" action="/burger/{{id}}?_method=DELETE" method="POST">
+            <button type="submit" name="button" class="delete-comment-button">Delete</button>
+        </form>
       </div>
     </div>
   {{/each}}
 {{/if}}
 
 <div class="comment-form">
-  <div class="card-content">
-    <h6 class="card-title">Add a comment:</h6>
-    <form method="POST" action="/burger/{{id}}?_method=PUT" class="row">
-        <input type="text" name="content" id="">
-        <input class="btn" type="submit" value="Submit">
+  <div class="comment-form-slide">
+    <h4 class="comment-prompt">Yuck or Yum?</h4>
+    <form class="comment-form-form"  action="/burger/{{id}}?_method=PUT" method="POST">
+        <input type="text" name="content" class="comment-input">
+        <input type="submit" value="Submit" class="comment-submit-button">
     </form>
   </div>
 </div>

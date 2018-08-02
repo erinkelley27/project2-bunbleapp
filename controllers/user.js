@@ -19,5 +19,11 @@ module.exports = {
     }).then(user => {
       res.redirect(`/user/${user.id}`)
     })
+  },
+  delete: (req, res) => {
+    User.findOneAndRemove({ _id: req.params.id })
+      .then(user => {
+        res.redirect('/')
+      })
   }
 }
