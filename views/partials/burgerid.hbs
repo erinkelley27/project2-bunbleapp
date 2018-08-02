@@ -1,3 +1,4 @@
+{{!-- Burger show page - Includes burger information and comments --}}
 <div class="id-partial">
     <div class="burger-image">
         <img src="{{ image }}" alt="{{ name }}" class="image">
@@ -30,7 +31,6 @@
         </span>
       </div>
       <div class="comments-info-and-actions">
-        {{!-- <a href="/user/{{ author.id }}" class="">{{ author.local.email }}</a> --}}
         <span class="comment-date">{{ createdAt }}</span>
         <form class="delete-comment-form" action="/burger/{{id}}?_method=DELETE" method="POST">
             <button type="submit" name="button" class="delete-comment-button">Delete</button>

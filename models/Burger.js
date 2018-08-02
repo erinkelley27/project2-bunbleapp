@@ -11,8 +11,7 @@ const Comment = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'User'
   }
-},
-{collection: 'comment'})
+})
 
 const Burger = new Schema({
   image: String,
