@@ -9,7 +9,7 @@ body {
     background: tomato;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
     margin: 0;
-    padding: 25px 0px 25px 0px;
+    padding: 20px 0px 20px 0px;
     text-align: center;
     box-shadow: 10px grey;
 }
@@ -17,7 +17,7 @@ body {
 .bunble-logo-center {
     font-family: 'Fredoka One', cursive;
     color: white;
-    font-size: 55px;
+    font-size: 75px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -32,7 +32,7 @@ body {
 
 main {
     border: solid black 5px;
-    margin: 25px 2% 25px 2%;
+    margin: 25px 1% 25px 1%;
 }
 
 /* HOMEPAGE */
@@ -143,6 +143,7 @@ main {
     background: white;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
     border: solid yellow 5px;
+    padding: 10px 10px 10px 10px;
 }
 
 h4 {
@@ -150,4 +151,8 @@ h4 {
     text-transform: uppercase;
     color: tomato;
     font-size: 24px;
+}
+
+.auth-form {
+    font-size: 16px;
 }
