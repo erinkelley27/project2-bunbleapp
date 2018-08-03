@@ -1,0 +1,20 @@
+User goes to Bunble URL homepage, which takes them to the user log-in.
+User has the option to either log-in or create an account.
+    Option 1: User logs in with a username and password.
+    Option 2: User creates and account.
+
+After logging in, user is taken to the first Burger Slide. Here, they will see a photo of the burger that takes up most of the page, the burger name and a short description of the burger's "vibe". This description will not include any of the ingredient or topping names.
+
+Based on the description, the user will decide if they want to learn more about the burger. 
+    Option 1: If they are not interested, they will "swipe left" or click the button that says "I'd rather have a sad salad". This will populate a new burger slide.
+    Option 2: If they want to know more about the burger, they will "swipe right" or click the button that says "Hell yea! Fire up the grill!" This will take the user to a Burger ID page.
+
+On the Burger ID page, the user will see a thumbnail sized photo of the burger's slide pictuer, and the same burger name and short description from the slide. The majority of this page will list the ingredients for the burger, i.e., the type of bun, type of patty and all of the toppings. This MAY include suggestions for a side or beer pairing.
+
+On the right aside of the Burger ID page, there will be a section for comments about the burger. This includes a Comments header and a list of comments with the most recent comment populated at the top, subsequently moving to the oldest comment at the bottom. At the very bottom of the aside, the user can enter a comment into an input field and submit it with a submit button.
+
+At the bottom of the Burger ID page, there will be two buttons, which will serve as options for the user to move on.
+    Option 1: The user will click a button that says "Still hungry! Keep looking", which will take the user back to the Burger Slide.
+    Option 2: If the user wants to save the Burger ID page to their profile to reference later, they will click the button that says "Add to Favorites".
+
+The user can access their personal user profile by clicking a button on the top right corner of the layout. The profile page will feature a thumbnail sized profile picture, their username and a collection of thumbnails of the burgers they have saved. The favorite burger thumbnails will be set up as links, which will take the user back to that burger's specific ID page.
