@@ -8,7 +8,7 @@ body {
 .site-header {
     background: tomato;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
-    margin: 0;
+    margin: 0px 0px 0px 0px;
     padding: 35px 0px 10px 0px;
     text-align: center;
     box-shadow: 10px grey;
@@ -52,19 +52,16 @@ h4 {
 
 /* HOMEPAGE */
 .burgers {
-    /* border: solid blue 5px; */
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* flex-direction: row; */
 }
 
 .slide-partial {
     background: white;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
     margin: 10px 10px 10px 10px;
-    /* border: solid pink 5px; */
     flex-direction: row;
     /* display: flex; */
     /* height: 400px;
@@ -76,7 +73,9 @@ h4 {
     /* display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; */
+    overflow: hidden;
+    height: 350px;
+    width: 350px; */
 }
 
 .image {
@@ -100,7 +99,6 @@ h4 {
     margin: 25px 25% 25px 25%;
     background: white;
     box-shadow: 10px 10px 85px -6px rgba(0,0,0,0.75);
-    /* border: solid gold 5px; */
 }
 
 .burger-name {
@@ -111,6 +109,8 @@ h4 {
 .burger-desc {
     background: gold;
     padding: 3px 10px 3px 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .bun {

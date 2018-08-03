@@ -16,11 +16,13 @@ module.exports = {
           res.redirect(`/burger/${burger._id}`)
         })
       })
+  },
+  delete: (req, res) => {
+    let { comments } = req.body.id
+    Burger.findOne({ _id: req.params.id })
+      .then(burger => {
+
+        res.redirect(`/burger/${burger._id}`)
+      })
   }
-  // delete: (req, res) => {
-  //   Burger.findOneAndRemove({ _id: req.body.id })
-  //     .then(burger => {
-  //       res.redirect(`/burger/${burger._id}`)
-  //     })
-  // }
 }
