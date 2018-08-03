@@ -1,7 +1,6 @@
 {{!-- User profile --}}
 <div class="user-profile">
 
-    <p>{{user.id}}</p>
     <h4 class="username">{{ user.local.email }}</h4>
      <form class="delete-account-form" action="/user/{{user.id}}?_method=DELETE" method="POST">
         <button type="submit" name="button" class="delete-account-button">I'm a Vegetarian<br>Delete My Account</button>
