@@ -68,7 +68,7 @@ User.find({}).remove(() => {
           description: 'Howdy, Partner',
           toppings: {
             bun: 'Brioche Bun',
-            meat: 'Ground Beef Patty',
+            meat: 'Ground Bison Patty',
             topping1: 'Beer Battered Onion Ring',
             topping2: 'Thick Cut Bacon',
             topping3: 'BBQ Sauce',
