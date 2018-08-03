@@ -17,15 +17,12 @@ module.exports = {
         })
       })
   },
-  delete: (req, res) => {
-    let { comments } = req.body.id
-    Burger.findOne({ _id: req.params.id })
-      .then(burger => {
+  // delete: (req, res) => {
+  //   let { comments } = req.body.id
+  //   Burger.findOne({ _id: req.params.id })
+  //     .then(burger => {
 
-        res.redirect(`/burger/${burger._id}`)
-      })
-  }
+  //       res.redirect(`/burger/${burger._id}`)
+  //     })
+  // }
 }
-
-
-
