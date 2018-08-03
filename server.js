@@ -17,6 +17,12 @@ app.use(require('./routes/app.js'))
 app.use(require('./routes/burger.js'))
 app.use(require('./routes/user.js'))
 
+app.set('port', process.env.PORT || 3001)
+
+app.listen(app.get('port'), () => {
+  console.log(`✅ PORT: ${app.get('port')} 🌟`)
+})
+
 app.listen(3000, () => console.log('running on port 3000'))
 
 app.use(require('better-express-errors')(app))
