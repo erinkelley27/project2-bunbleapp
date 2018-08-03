@@ -11,6 +11,7 @@ app.set('view engine', 'hbs')
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
+app.use(require('better-express-errors')(app))
 
 // app.use(require('./routes/index.js'))
 app.use(require('./routes/app.js'))
@@ -23,6 +24,5 @@ app.listen(app.get('port'), () => {
   console.log(`✅ PORT: ${app.get('port')} 🌟`)
 })
 
-app.listen(3000, () => console.log('running on port 3000'))
+// app.listen(3000, () => console.log('running on port 3000'))
 
-app.use(require('better-express-errors')(app))
