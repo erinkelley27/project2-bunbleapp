@@ -23,6 +23,6 @@ app.set('port', process.env.PORT || 3001)
     console.log(`✅ PORT: ${app.get('port')} 🌟`)
   })
 
-app.listen(3000, () => console.log('running on port 3000'))
+// app.listen(3000, () => console.log('running on port 3000'))
 
 app.use(require('better-express-errors')(app))
