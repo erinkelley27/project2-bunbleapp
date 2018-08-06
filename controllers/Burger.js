@@ -1,4 +1,4 @@
-const { Burger, Comment } = require('../models/Burger')
+const { Burger } = require('../models/Burger')
 
 module.exports = {
   show: (req, res) => {
@@ -7,7 +7,7 @@ module.exports = {
         res.render('burger/show', { burger })
       })
   },
-  update: (req, res) => {
+  addComment: (req, res) => {
     let { content } = req.body
     Burger.findOne({ _id: req.params.id })
       .then(burger => {
@@ -17,12 +17,13 @@ module.exports = {
         })
       })
   },
-  // delete: (req, res) => {
-  //   let { comments } = req.body.id
-  //   Burger.findOne({ _id: req.params.id })
-  //     .then(burger => {
-
-  //       res.redirect(`/burger/${burger._id}`)
-  //     })
-  // }
+  removeComment: (req, res) => {
+    Burger.findOne({ _id: req.params.id })
+      .then(burger => {
+        burger.update({$pull: { comments: { _id: req.body.id }}})
+        burger.save(err => {
+          res.redirect(`/burger/${burger._id}`)
+        })
+      })
+  }
 }
