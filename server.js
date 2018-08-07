@@ -3,7 +3,6 @@ const hbs = require('hbs')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 
-// Does it matter what order these are in?
 const app = express()
 hbs.registerPartials(__dirname + '/views/partials')
 app.use(express.static('public'))
@@ -22,7 +21,5 @@ app.set('port', process.env.PORT || 3001)
   app.listen(app.get('port'), () => {
     console.log(`✅ PORT: ${app.get('port')} 🌟`)
   })
-
-// app.listen(3000, () => console.log('running on port 3000'))
 
 app.use(require('better-express-errors')(app))
