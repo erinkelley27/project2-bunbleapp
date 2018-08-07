@@ -100,10 +100,58 @@ User.find({}).remove(() => {
           description: 'A Burger State of Mind',
           toppings: {
             bun: 'Everything Bagel',
-            meat: 'Thick Cut Bacon',
-            topping1: 'Cheddar Cheesed',
-            topping2: 'Thinly Sliced Apple',
+            meat: 'Ground Beef Patty',
+            topping1: 'Thick Cut Bacon',
+            topping2: 'Cheddar Cheese',
+            topping3: 'Thinly Sliced Apple',
+            topping4: ' ',
+            topping5: ' '
+          }
+        }).then(burger => {
+          user.burgers.push(burger)
+        }),
+        Burger.create({
+          image: '../images/default-burger.png',
+          name: 'All American Classic',
+          description: 'God Bless the B-U-N',
+          toppings: {
+            bun: 'Brioche Bun',
+            meat: 'Ground Beef Patty',
+            topping1: 'Lettuce',
+            topping2: 'Tomato',
+            topping3: 'Raw Onion',
+            topping4: 'American Cheese',
+            topping5: ' '
+          }
+        }).then(burger => {
+          user.burgers.push(burger)
+        }),
+        Burger.create({
+          image: '../images/default-burger.png',
+          name: 'Caribbean Burger',
+          description: 'Irie, Mon!',
+          toppings: {
+            bun: 'Brioche Bun',
+            meat: 'Ground Beef Patty with Jerk Seasoning',
+            topping1: 'Raw Onion',
+            topping2: 'Mango Chutney',
             topping3: ' ',
+            topping4: ' ',
+            topping5: ' '
+          }
+        }).then(burger => {
+          user.burgers.push(burger)
+        }),
+        Burger.create({
+          image: '../images/default-burger.png',
+          name: 'Sunday Brunch Burger',
+          description: 'Try It Bottomless',
+          toppings: {
+            bun: 'English Muffin',
+            meat: 'Ground Beef Patty',
+            topping1: 'Canadian Bacon',
+            topping2: 'Poached Egg',
+            topping3: 'Hollandaise',
             topping4: ' ',
             topping5: ' '
           }
