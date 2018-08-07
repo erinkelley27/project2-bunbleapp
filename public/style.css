@@ -100,22 +100,12 @@ h4 {
 
 .burger-image-id {
     border: solid white 5px;
-    max-height: 350px;
+    max-height: 450px;
     max-width: auto;
-    /* min-height: 350px;
-    min-width: 375px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; */
 }
 
 .image-id {
     max-height: 350px;
-    /* max-width: auto;
-    min-height: 350px;
-    min-width: auto;
-    flex-shrink: 1; */
 }
 
 .burger-name {
