@@ -2,8 +2,8 @@
 
 {{!-- Burger photo, name, description and toppings --}}
 <div class="id-partial">
-    <div class="burger-image">
-        <img src="{{ image }}" alt="{{ name }}" class="image">
+    <div class="burger-image-id">
+        <img src="{{ image }}" alt="{{ name }}" class="image-id">
     </div>
     <div class="burger-name">
         <a class="burger-link" href="/burger/{{id}}">
@@ -36,7 +36,7 @@
       <div class="comments-info-and-actions">
         <span class="comment-date">{{ createdAt }}</span>
         <form class="delete-comment-form" action="/burger/{{id}}?_method=PUT" method="POST">
-            <button type="submit" name="button" class="delete-comment-button">Delete</button>
+            <button type="submit" name="button" onClick="deleteComment(id, comment.id)" class="delete-comment-button">Delete</button>
         </form>
       </div>
     </div>
