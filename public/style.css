@@ -109,9 +109,9 @@ h4 {
 }
 
 .image-id {
-    max-height: 600px;
+    max-height: 400px;
     max-width: auto;
-    min-height: 600px;
+    min-height: 400px;
     min-width: auto;
     flex-shrink: 1;
 }
