@@ -17,4 +17,10 @@ module.exports = {
         })
       })
   }
+  // deleteComment: (req, res) => {
+  //   Burger.findOneAndRemove({ _commentid: req.params.commentid })
+  //     .then(burger => {
+  //       res.redirect('/')
+  //     })
+  // }
 }

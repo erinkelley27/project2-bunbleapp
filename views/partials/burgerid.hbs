@@ -35,9 +35,9 @@
       </div>
       <div class="comments-info-and-actions">
         <span class="comment-date">{{ createdAt }}</span>
-        <form class="delete-comment-form" action="/burger/{{id}}?_method=PUT" method="POST">
-            <button type="submit" name="button" onClick="deleteComment(id, comment.id)" class="delete-comment-button">Delete</button>
-        </form>
+        {{!-- <form class="delete-comment-form" action="/burger/{{id}}/comments/{{comment.id}}?_method=PUT" method="POST">
+            <button type="submit" name="button" class="delete-comment-button">Delete</button>
+        </form> --}}
       </div>
     </div>
   {{/each}}
